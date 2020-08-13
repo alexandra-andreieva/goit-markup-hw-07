@@ -1,0 +1,157 @@
+.basement {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  text-decoration: none;
+
+  background-color: #2f303a;
+}
+
+.basement-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.basement-name {
+  margin-right: 80px;
+}
+
+.basement-name .basement-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.basement-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: $another-title-color;
+}
+
+.basement-adress {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  color: $another-title-color;
+}
+
+.basement-join {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $another-title-color;
+}
+
+.basement-mail,
+.basement-number {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  margin-right: 94px;
+}
+
+.join-us {
+  display: flex;
+}
+
+.join-us-tag {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+
+  fill: $another-title-color;
+}
+
+.join-us-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-us-tag:hover,
+.join-us-tag:focus {
+  background-color: $accent-color;
+}
+
+.mail-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $another-title-color;
+}
+
+.mail-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $another-title-color;
+}
+
+.mail-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-container {
+  display: flex;
+}
+
+.mail-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-subscribe {
+  margin-right: 10px;
+}
+
+.mail-icon {
+  width: 24px;
+  height: 24px;
+  fill: $another-title-color;
+}
