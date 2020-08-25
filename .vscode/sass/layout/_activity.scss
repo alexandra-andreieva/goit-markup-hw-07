@@ -1,17 +1,19 @@
 .activity {
   padding-bottom: 94px;
-}
 
-.activity-list {
-  display: flex;
+  &-list {
+    display: flex;
+  }
+
+  &-list-item {
+    position: relative;
+  }
 }
 
 .activity-list-item {
-  position: relative;
-}
-
-.activity-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .activity-title {

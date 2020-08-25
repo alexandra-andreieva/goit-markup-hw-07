@@ -5,20 +5,22 @@
   text-decoration: none;
 
   background-color: #2f303a;
-}
 
-.basement-nav {
-  display: flex;
-  align-items: baseline;
+  &-nav {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-name {
+    margin-right: 80px;
+  }
 }
 
 .basement-name {
-  margin-right: 80px;
-}
-
-.basement-name .basement-logo {
-  display: block;
-  margin-bottom: 20px;
+  .basement-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .basement-logo {
@@ -70,37 +72,41 @@
 
 .join {
   margin-right: 94px;
+
+  &-us {
+    display: flex;
+  }
+
+  &-us-tag {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-us-icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    fill: $another-title-color;
+  }
 }
 
-.join-us {
-  display: flex;
+.join-us-link {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .join-us-tag {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-us-icon {
-  width: 20px;
-  height: 20px;
-  margin: auto;
-
-  fill: $another-title-color;
-}
-
-.join-us-link:not(:last-child) {
-  margin-right: 10px;
-}
-
-.join-us-tag:hover,
-.join-us-tag:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .mail-title {
@@ -129,11 +135,13 @@
   color: $another-title-color;
 }
 
-.mail-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.mail-input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .mail-container {
